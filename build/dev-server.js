@@ -65,10 +65,10 @@ apiRoutes.get('/lyric', (req, res) => {
 })
 
 apiRoutes.get('/getCdInfo', (req, res) => {
-  let url = 'http://ustbhuangyi.com/music/api/getCdInfo'
+  let url = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg'
   axios.get(url, {
     headers: {
-      referer: 'https://c.y.qq.com',
+      referer: 'https://y.qq.com/w/taoge.html',
       host: 'c.y.qq.com'
     },
     params: req.query

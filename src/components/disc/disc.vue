@@ -34,10 +34,12 @@
     methods: {
       _getSongList() {
         getSongList(this.disc.dissid).then(res => {
-          console.log(res)
           if (res.code === ERR_OK) {
             console.log(res.cdlist[0].songlist)
+            // todo next
           }
+        }).catch(e => {
+          console.log(e)
         })
       }
     },
