@@ -107,6 +107,9 @@
           this.hasMore = false
         }
       },
+      refresh() {
+        this.$refs.suggest.refresh()
+      },
       listScroll() {
         this.$emit('listScroll')
       },
